@@ -1,0 +1,6 @@
+function [ AIC ] = Untitled2( negLL,k )
+for i=1:size(negLL,1)
+    AIC(i) = 2 * negLL(i) + (2*k);
+end
+end
+

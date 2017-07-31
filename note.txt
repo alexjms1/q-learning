@@ -1,0 +1,1 @@
+You should try FMINCON's sqp algorithm. If certain regions of your function are NaN or non-finite (as is your case), the sqp algorithm can avoid those regions

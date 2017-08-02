@@ -1,5 +1,7 @@
 function [ negLL, Qvalues, probs ] = QlearningFull05( alphaG, alphaL, beta, choices, rewards )
-% q learning algorith with seperate alphas for gains and losses
+% q learning algorith with seperate alphas (learning rates) for gains and
+% losses (rewards and absense of rewards).  Assumes 2 sets of stimuli are
+% presented (AB & CD). Q values for all stimuli start at 0.5.
 negLL=0;
 numStimuli=4;
 numTrials = length(choices);

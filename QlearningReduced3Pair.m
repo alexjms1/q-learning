@@ -1,5 +1,7 @@
 function [ negLL, Qvalues, probs ] = QlearningReduced3Pair(alpha, beta, choices, rewards )
-% q learning algorith with one alpha for gains and losses
+% q learning algorith with a single alpha (learning rate) for gains and
+% losses (rewards and absense of rewards).  Assumes 3 sets of stimuli are
+% presented (AB & CD & EF). Q values for all stimuli start at 0.
 negLL=0;
 numStimuli=4;
 numTrials = length(choices);

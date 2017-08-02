@@ -1,4 +1,6 @@
 function [ AIC, R2, nLLPerTrial, BIC ] = AICR2( negLL,k,numTrials )
+% This function calculates AIC, R2, negative log likelihood per trial, and
+% BIC for fitted models
 numIter = length(negLL);
 r = numTrials*log(0.5);
 R2 = zeros(numIter,1);

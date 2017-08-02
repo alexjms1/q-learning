@@ -1,5 +1,7 @@
 function [ negLL, Qvalues, probs ] = QlearningFull3Pair( alphaG, alphaL, beta, choices, rewards )
-% q learning algorith with seperate alphas for gains and losses
+% q learning algorith with seperate alphas (learning rates) for gains and
+% losses (rewards and absense of rewards).  Assumes 3 sets of stimuli are
+% presented (AB & CD & EF). Q values for all stimuli start at 0.
 negLL=0;
 numStimuli=6;
 %numTrials = length(choices);
